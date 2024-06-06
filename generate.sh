@@ -4,4 +4,4 @@ set -eux -o pipefail
 
 rm -rf output
 mkdir output
-cp index.html output
+cp index.html style.css output
