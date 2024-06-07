@@ -13,7 +13,7 @@ html {
         margin: 2em;
     }
 
-    body {
+    body.flex {
         display: flex;
         flex-flow: row wrap;
     }
@@ -31,6 +31,12 @@ html {
 
     div#take-action {
         display: none;
+    }
+
+    div#about {
+        width: 100%;
+        font-size: 60%;
+        line-height: 1.2em;
     }
 }
 
