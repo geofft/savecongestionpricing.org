@@ -19,13 +19,34 @@ html {
     }
 
     div#top {
-        padding: 0 2em;
         width: 100%;
         border-bottom: solid;
     }
 
     div {
-        width: 50%;
+        padding: 0 2em;
+        width: calc(50% - 4em);
         min-width: 300px;
+    }
+
+    div#take-action {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    div#take-action {
+        border-radius: 10px;
+        font-size: 125%;
+        background-color: black;
+        color: white;
+        text-align: center;
+        margin: auto;
+    }
+
+    div#take-action a {
+        font: inherit;
+        color: inherit;
+        text-decoration: inherit;
     }
 }
