@@ -83,7 +83,6 @@ def main():
     district = "DISTRICT"
     support_column_index = 4
     update_geojson(chamber, district, support_column_index)
-    pass
 
 
 if __name__ == "__main__":
