@@ -4,6 +4,10 @@ html {
     line-height: 1.8em;
 }
 
+#map {
+    height: 200px;
+}
+
 @media (min-width: 480px) {
     html {
         margin: 2em;
