@@ -2,6 +2,8 @@
 
 set -eux -o pipefail
 
-rm -rf output
-mkdir output
-cp index.html style.css output
+python3 -m venv venv
+venv/bin/pip install -U pip
+venv/bin/pip install -r requirements.txt
+
+venv/bin/python3 render.py
