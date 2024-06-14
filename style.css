@@ -56,3 +56,15 @@ html {
         text-decoration: inherit;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    html {
+        background-color: black;
+        color: white;
+    }
+    
+    div#take-action {
+        background-color: #999;
+        color: black;
+    }
+}
