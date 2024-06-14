@@ -2,6 +2,8 @@ html {
     font-family: sans-serif;
     font-size: 125%;
     line-height: 1.8em;
+    background-color: #eee;
+    color: #111;
 }
 
 #map {
@@ -59,12 +61,24 @@ html {
 
 @media (prefers-color-scheme: dark) {
     html {
-        background-color: black;
-        color: white;
+        background-color: #222;
+        color: #ddd;
     }
     
     div#take-action {
-        background-color: #999;
-        color: black;
+        background-color: #ccc;
+        color: #333;
+    }
+
+    a {
+	color: #99c;
+    }
+
+    a:active {
+        color: #c99;
+    }
+
+    a:visited {
+        color: #c69;
     }
 }
