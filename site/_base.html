@@ -8,7 +8,9 @@
 {% endblock %}
 </head>
 <body {% if flexroot %}class="flex"{% endif %}>
+{% filter markdown %}
 {% block body required %}
 {% endblock %}
+{% endfilter %}
 </body>
 </html>
