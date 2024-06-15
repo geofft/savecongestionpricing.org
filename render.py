@@ -12,6 +12,7 @@ def get_env():
     env = jinja2.Environment(
         loader=jinja2.FileSystemLoader("site"),
         autoescape=jinja2.select_autoescape(),
+        trim_blocks=True,
         keep_trailing_newline=True,
     )
     env.filters["markdown"] = md.render

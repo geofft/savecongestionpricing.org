@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Save congestion pricing!</title>
-<meta name="viewport" content="width=device-width">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://savecongestionpricing.org">
-<meta property="og:title" content="Save congestion pricing!">
-<meta property="og:description" content="Find out what's going on with Gov. Hochul's attempt to cancel congestion pricing, how it affects you, and how you can get involved in the effort to save it.">
-<link rel="stylesheet" type="text/css" href="style.css?1">
-</head>
-<body class="flex">
+{% set flexroot = true %}
+{% extends "_base.html" %}
+
+{% block title %}
+Save congestion pricing!
+{% endblock title %}
+
+{% block body %}
 <div id="top">
 <h1>Save Congestion Pricing</h1>
 <p>Gov. Kathy Hochul has announced an intention to "indefinitely pause" the scheduled rollout of congestion pricing on June 30.</p>
@@ -64,5 +60,12 @@
 <div id="about">
 This website is created by volunteer NYC residents to provide information about this rapidly-changing news and the organizations that are fighting to save congestion pricing. It is not affiliated with any specific organization. If you have ideas for things to add or change, you can reach out to <a href="https://twitter.com/geofft">@geofft</a> or <a href="https://twitter.com/lizdenys">@lizdenys</a> on Twitter or <a href="https://github.com/geofft/savecongestionpricing.org">suggest changes on GitHub</a>.
 </div>
-</body>
-</html>
+{% endblock %}
+
+{% block head %}
+{{ super() }}
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://savecongestionpricing.org">
+<meta property="og:title" content="Save congestion pricing!">
+<meta property="og:description" content="Find out what's going on with Gov. Hochul's attempt to cancel congestion pricing, how it affects you, and how you can get involved in the effort to save it.">
+{% endblock head %}
